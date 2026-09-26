@@ -4,8 +4,8 @@
         id="http://massy/streamingpertizen"
         version="0.1.0"
         viewmodes="maximized">
-    <tizen:application id="SLPKTV0001.StreamingPerTizen"
-                       package="SLPKTV0001"
+    <tizen:application id="STRMTIZEN1.StreamingPerTizen"
+                       package="STRMTIZEN1"
                        required_version="5.5" />
     <content src="index.html" />
     <icon src="icon.png" />

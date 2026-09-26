@@ -7,6 +7,7 @@ Piattaforma base per una app Samsung TV (Tizen OS) dedicata allo streaming IPTV.
 Questa versione è una base installabile con:
 
 - configurazione Tizen (`config.xml`) con profilo `tv`
+- identificativi applicazione di esempio (da personalizzare): `STRMTIZEN1` / `STRMTIZEN1.StreamingPerTizen`
 - schermata iniziale minimale (`index.html` + `css/style.css`)
 - bootstrap JavaScript (`js/main.js`) con gestione tasto BACK
 
@@ -20,11 +21,15 @@ Prerequisiti: [Tizen Studio](https://developer.tizen.org/development/tizen-studi
    ```bash
    cd streaming_per_tizen
    ```
-2. Crea il pacchetto `.wgt`:
+2. Esegui la build web:
    ```bash
-   tizen package -t wgt -s <nome-certificato>
+   tizen build-web -- .
    ```
-3. Installa su TV/dispositivo target:
+3. Crea il pacchetto `.wgt` dalla cartella di build:
+   ```bash
+   tizen package -t wgt -s <nome-certificato> -- .buildResult
+   ```
+4. Installa su TV/dispositivo target:
    ```bash
    tizen install -n streaming_per_tizen.wgt -t <nome-dispositivo>
    ```
