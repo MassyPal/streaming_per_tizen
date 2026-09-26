@@ -7,10 +7,12 @@
 
     document.addEventListener('tizenhwkey', function (event) {
         if (event.keyName === 'back') {
-            try {
-                tizen.application.getCurrentApplication().exit();
-            } catch (error) {
-                console.warn('Impossibile chiudere l\'app:', error);
+            if (window.tizen && tizen.application && tizen.application.getCurrentApplication) {
+                try {
+                    tizen.application.getCurrentApplication().exit();
+                } catch (error) {
+                    console.warn('Impossibile chiudere l\'app:', error);
+                }
             }
         }
     });
