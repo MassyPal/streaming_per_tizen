@@ -29,7 +29,11 @@ Prerequisiti: [Tizen Studio](https://developer.tizen.org/development/tizen-studi
    ```bash
    tizen package -t wgt -s <nome-certificato> -- .buildResult
    ```
-4. Installa su TV/dispositivo target:
+4. Verifica il nome del pacchetto generato:
    ```bash
-   tizen install -n streaming_per_tizen.wgt -t <nome-dispositivo>
+   ls .buildResult/*.wgt
+   ```
+5. Installa su TV/dispositivo target (sostituisci `<file-generato>.wgt` con il nome trovato):
+   ```bash
+   tizen install -n <file-generato>.wgt -t <nome-dispositivo>
    ```
