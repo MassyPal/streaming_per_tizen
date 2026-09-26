@@ -18,7 +18,7 @@ Prerequisiti: [Tizen Studio](https://developer.tizen.org/development/tizen-studi
 
 1. Posizionati nella root del progetto:
    ```bash
-   cd /home/runner/work/streaming_per_tizen/streaming_per_tizen
+   cd streaming_per_tizen
    ```
 2. Crea il pacchetto `.wgt`:
    ```bash
