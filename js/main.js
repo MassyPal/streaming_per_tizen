@@ -2,7 +2,12 @@
     'use strict';
 
     window.addEventListener('load', function () {
+        var startButton = document.getElementById('start-button');
+
         console.log('Streaming per Tizen avviata');
+        if (startButton) {
+            startButton.focus();
+        }
     });
 
     document.addEventListener('tizenhwkey', function (event) {

@@ -21,3 +21,18 @@ body {
     max-width: 960px;
     padding: 2rem;
 }
+
+#start-button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid #475467;
+    border-radius: 0.5rem;
+    background: #182230;
+    color: #f8fafc;
+    font-size: 1rem;
+}
+
+#start-button:focus {
+    outline: 3px solid #7dd3fc;
+    outline-offset: 3px;
+}
