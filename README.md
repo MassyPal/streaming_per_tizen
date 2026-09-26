@@ -23,7 +23,7 @@ Prerequisiti: [Tizen Studio](https://developer.tizen.org/development/tizen-studi
    ```
 2. Esegui la build web:
    ```bash
-   tizen build-web -- .
+   tizen build-web
    ```
 3. Crea il pacchetto `.wgt` dalla cartella di build:
    ```bash

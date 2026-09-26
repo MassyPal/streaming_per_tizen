@@ -6,7 +6,7 @@
         viewmodes="maximized">
     <tizen:application id="STRMTIZEN1.StreamingPerTizen"
                        package="STRMTIZEN1"
-                       required_version="2.4" />
+                       required_version="5.0" />
     <content src="index.html" />
     <icon src="icon.png" />
     <name>Streaming per Tizen</name>
